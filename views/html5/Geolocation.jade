@@ -1,0 +1,15 @@
+extends ../layout
+block html_header
+  meta(name="viewport",content="initial-scale=1.0, user-scalable=no")
+block content
+  <!--#include file="http://www.163.com"-->
+  h2 test
+  h1= title
+  p Demo #{title}
+  div#map(style="width:500px;height:400px")
+  div#log
+
+
+block html_bottom
+  script(type="text/javascript",src="https://maps.googleapis.com/maps/api/js?sensor=false" )
+  script(type="text/javascript",src="/javascripts/geolocation.js" )
